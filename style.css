@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,547&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+body{
+    background: #bbc6fa;
+}
+.quote-box{
+    width: 700px;
+    margin-top: 400px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+.quote-box:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.quote-box h2{
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-color: hwb(197 4% 47%);
+    text-decoration-thickness: 6x; /* Adjust thickness as needed */
+    text-underline-offset:15px;
+}
+.quote-box blockquote{
+    font-size: 26px;
+    min-height: 110px;
+}
+.quote-box blockquote::before, .quote-box blockquote::after{
+    content: '"';
+}
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box div button, .quote-box div a {
+    
+    background: hwb(197 4% 47%);
+    color: white;
+    border-radius: 25px;
+    border: 1px solid hwb(197 4% 47%);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
